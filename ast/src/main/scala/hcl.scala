@@ -15,4 +15,7 @@ sealed trait HCLNumber
 case class HCLLong(value: Long) extends HCLNumber
 case class HCLDecimal(value: BigDecimal) extends HCLNumber
 
+sealed trait Scope 
+case class Binding(name: String, value: HCL) extends Scope
+case class Pure(value: HCL) extends Scope
 

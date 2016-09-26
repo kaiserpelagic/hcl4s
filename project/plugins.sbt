@@ -8,6 +8,8 @@ resolvers += Resolver.url(
     url("http://dl.bintray.com/content/tpolecat/sbt-plugin-releases"))(
         Resolver.ivyStylePatterns)
 
+resolvers += DefaultMavenRepository
+
 addSbtPlugin("me.lessis"         % "bintray-sbt" % "0.3.0")
 addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.1")
 addSbtPlugin("com.typesafe.sbt"  % "sbt-site"    % "0.8.1")

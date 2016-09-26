@@ -1,6 +1,6 @@
 
 package object hcl {
-  type HCLArray = Vector[HCL]
+  type HCLArray = List[HCL]
   type Field = String
 }
 
